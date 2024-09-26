@@ -1,0 +1,49 @@
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  display :flex;
+  align-items: center;
+  justify-content: center;
+}
+.assignment-input {
+  margin-bottom: 20px;
+}
+.assignment-input input, .assignment-input button {
+  margin-right: 10px;
+  padding: 5px;
+}
+.assignment-list {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+.assignment-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #f0f0f0;
+  width: 800px;
+  height: 20vh;
+  font-size: 14px;
+  
+}
+.status-button {
+  
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+.status-button:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}

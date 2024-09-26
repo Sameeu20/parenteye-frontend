@@ -1,0 +1,16 @@
+<div class="main-content">
+    <h3>Assignments</h3>
+    <!-- <div class="assignment-input">
+      <input [(ngModel)]="newAssignmentTitle" placeholder="Assignment Title">
+      <input [(ngModel)]="newAssignmentSubject" placeholder="Subject">
+      <button (click)="addAssignment()">Add Assignment</button>
+    </div> -->
+    <div class="assignment-list">
+      <div *ngFor="let assignment of assignments" class="assignment-card">
+        <h3>{{ assignment.title }}</h3>
+        <p>{{ assignment.subject }}</p>
+        <button class="status-button" (click)="toggleOverlay(assignment)">Status</button>
+      </div>
+    </div>
+    <app-overlay *ngIf="showOverlay" [assignment]="selectedAssignment" (close)="toggleOverlay()"></app-overlay>
+  </div>
