@@ -1,0 +1,47 @@
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.events{
+    width: 400px;
+    height : 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    background-color: #f0f0f0;
+    border: 100px;
+    margin: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    
+}
+
+.event-heading{
+    display: flex;
+    justify-content: center;
+}
+    
+.assignments{
+    width: 400px;
+    height : 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 100px;
+    margin: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    
+}
+.assignment-heading{
+    display: flex;
+    justify-content: center;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+

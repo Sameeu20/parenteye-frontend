@@ -9,25 +9,22 @@
     align-items: center;
     cursor: pointer;
   }
-.nav{
+  .nav {
     top: 10px;
     right: 10px;
     padding: 10px;
     font-size: 15px;
     display: flex;
-    justify-content:left;
+    justify-content: left;
     align-items: center;
-}
-
-.nav-item{
+  }
+  .nav-item {
     text-decoration: none;
     padding: 10px;
     font-size: 15px;
     cursor: pointer;
-    font-size: 15px;
-    
-}
-.navbar-menu a.active {
+  }
+  .active {
     color: #3366cc;
     font-weight: bold;
-}
+  }
