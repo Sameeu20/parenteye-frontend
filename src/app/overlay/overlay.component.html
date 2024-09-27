@@ -1,10 +1,15 @@
-<div class="overlay">
-    <div class="overlay-content">
-      <h2>{{ assignment?.title }}</h2>
-      <p>Subject: {{ assignment?.subject }}</p>
-      <p class = "content">{{assignment?.content}}</p>
-      <button class = "button"(click)="onClose()"> &times;</button>
-    </div>
-  </div>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-  
+<div class="fixed inset-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center z-[1000]">
+  <div class="bg-white p-8 rounded-lg w-full max-w-2xl h-[90vh] overflow-y-auto shadow-lg"style="width: 80%; height: 90vh;">
+    <h2 class="text-[1.8rem] text-gray-800 mb-4">{{ assignment?.title }}</h2>
+    <p class="text-gray-700 text-lg mb-4">Subject: {{ assignment?.subject }}</p>
+    <p class="content h-[70vh] w-full max-w-5xl my-5 bg-gray-100 border border-gray-300 rounded-lg shadow-md p-5 box-border overflow-hidden">
+      {{assignment?.content}}
+    </p>
+
+    <button class="fixed top-3 right-3 text-red-600  cursor-pointer transition-transform duration-300 hover:scale-110 hover:text-red-700 hover:text-shadow-sm"
+            (click)="onClose()" style="font-size: 4rem;"> &times;
+    </button>
+  </div>
+</div>

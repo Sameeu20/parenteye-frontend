@@ -1,14 +1,30 @@
-<div class = "heading">
-    <h1>Teacher Dashboard</h1>
-</div>
-
-
-<div class = "container">
-    <div class="events">
-        <h2 class = "event-heading">Events</h2>
-      </div>
-      <div class="assignments">
-        <h2 class ="assignment-heading" >Assignments</h2>
-      </div>
-</div>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+        /* Custom styles that can't be achieved with standard Tailwind classes */
+        .events, .assignments {
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex items-center justify-center">
+        <h1>Teacher Dashboard</h1>
+    </div>
+    <div class="flex items-center justify-center">
+        <div class="events bg-gray-100 p-5 m-8 border border-gray-300 rounded-lg">
+            <h2 class="flex justify-center">Events</h2>
+        </div>
+        <div class="assignments bg-gray-100 p-5 m-8 border border-gray-300 rounded-lg">
+            <h2 class="flex justify-center">Assignments</h2>
+        </div>
+    </div>
+</body>
+</html>

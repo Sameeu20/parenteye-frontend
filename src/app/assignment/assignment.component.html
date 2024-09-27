@@ -1,16 +1,30 @@
-<div class="main-content">
-    <h1>Assignments</h1>
-    <!-- <div class="assignment-input">
-      <input [(ngModel)]="newAssignmentTitle" placeholder="Assignment Title">
-      <input [(ngModel)]="newAssignmentSubject" placeholder="Subject">
-      <button (click)="addAssignment()">Add Assignment</button>
-    </div> -->
-    <div class="assignment-list">
-      <div *ngFor="let assignment of assignments" class="assignment-card">
-        <h3>{{ assignment.title }}</h3>
-        <p>{{ assignment.subject }}</p>
-        <button class="status-button" (click)="toggleOverlay(assignment)">Status</button>
-      </div>
-    </div>
-    <app-overlay *ngIf="showOverlay" [assignment]="selectedAssignment" (close)="toggleOverlay()"></app-overlay>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<div class="flex-grow p-5 h-screen overflow-hidden flex flex-col items-center justify-center">
+  <h1 class="text-2xl font-bold mb-5">Assignments</h1>
+
+  <!-- Assignment Input (commented out) -->
+  <!--
+  <div class="flex mb-5 space-x-2">
+    <input [(ngModel)]="newAssignmentTitle" class="border p-2" placeholder="Assignment Title">
+    <input [(ngModel)]="newAssignmentSubject" class="border p-2" placeholder="Subject">
+    <button (click)="addAssignment()" class="bg-blue-500 text-white px-3 py-2 rounded">Add Assignment</button>
   </div>
+  -->
+
+  <!-- Assignment List -->
+  <div class="assignment-list overflow-y-auto flex-grow w-full max-w-4xl">
+    <div *ngFor="let assignment of assignments" class="assignment-card bg-gray-100 border border-gray-300 rounded-lg p-7 mb-5 w-full h-[20vh] text-sm flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">{{ assignment.title }}</h3>
+        <p class="text-gray-700">{{ assignment.subject }}</p>
+      </div>
+      <button class="status-button w-full h-8 bg-blue-500 text-white text-xs font-semibold flex justify-center items-center cursor-pointer rounded shadow-md hover:shadow-lg transition-shadow duration-300"
+              (click)="toggleOverlay(assignment)">
+        Status
+      </button>
+    </div>
+  </div>
+
+  <!-- Overlay Component -->
+  <app-overlay *ngIf="showOverlay" [assignment]="selectedAssignment" (close)="toggleOverlay()"></app-overlay>
+</div>

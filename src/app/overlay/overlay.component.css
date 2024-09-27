@@ -1,10 +1,10 @@
-.overlay {
+/* .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Darker for better contrast */
+  background-color: rgba(0, 0, 0, 0.7); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,66 +12,67 @@
 }
 
 .overlay-content {
-  background-color: #ffffff; /* White background */
-  padding: 30px; /* Increased padding for spaciousness */
-  border-radius: 10px; /* More pronounced rounded corners */
-  width: 100%; /* Adjusted width for better mobile responsiveness */
-  max-width: 600px; /* Limit max width for larger screens */
-  height: 80vh; /* Keep height as is */
-  overflow-y: auto; /* Allow scrolling */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
+  background-color: #ffffff;
+  padding: 30px; 
+  border-radius: 10px; 
+  width: 100%;
+  max-width: 600px; 
+  height: 80vh; 
+  overflow-y: auto; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+} */
 
-.overlay h2 {
-  font-size: 1.8rem; /* Increased font size for title */
-  margin-bottom: 15px; /* Space below the title */
-  color: #333; /* Darker color for better readability */
+/* .overlay h2 {
+  font-size: 1.8rem; 
+  margin-bottom: 15px; 
+  color: #333; 
 }
 
 .overlay p {
-  font-size: 1rem; /* Standard font size for text */
-  margin: 10px 0; /* Space around paragraphs */
-  color: #555; /* Slightly lighter color for text */
+  font-size: 1rem; 
+  margin: 10px 0; 
+  color: #555; 
 }
 
-  .button{
+.button {
   position: fixed;
   top: 10px;
   right: 10px;
-  width: auto; /* Set width to auto */
-  height: auto; /* Set height to auto */
-  font-size: 3.5rem; /* Adjust size for visibility */
-  color: red; /* Set color for the cross */
+  width: auto;
+  height: auto;
+  font-size: 3.5rem;
+  color: red;
   cursor: pointer;
-  background: none; /* Remove background */
-  border: none; /* Remove border */
-  box-shadow: none; /* Remove shadow */
+  background: none;
+  border: none;
+  box-shadow: none;
   transition: transform 0.3s, color 0.3s, box-shadow 0.3s;
-  }
-  .button:hover{
-  transform: scale(1.2); /* Enlarge on hover */
-  color: #f00; /* Change color on hover */
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);/* Add shadow on hover */
-  }
-
-  .content {
-    height: 50vh; /* Keep the height as is */
-    width: 100%; /* Change to 100% for full-width responsiveness */
-    max-width: 1200px; /* Optional: max width for larger screens */
-    margin: 20px auto; /* Center the content with auto margins */
-    background: #f0f0f0; /* White background */
-    border: 2px solid #ccc; /* Softer border color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 20px; /* Add padding for better spacing */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-    overflow: hidden; /* Prevent overflow of content */
 }
 
-/* Optional: Add responsive adjustments */
+.button:hover {
+  transform: scale(1.2);
+  color: #f00;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  height: 50vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
-    .content {
-        height: auto; /* Allow height to adjust for smaller screens */
-        padding: 10px; /* Reduce padding on smaller screens */
-    }
+  .content {
+      height: auto;
+      padding: 10px;
+  }
 }
+ */
